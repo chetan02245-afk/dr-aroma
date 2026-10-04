@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D R Aroma • Heritage Perfumes & Pure Attars | Est. 1960 Tripolia Bazar, Jaipur</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Established in 1960 in Tripolia Bazar, Jaipur. D R Aroma crafts customizable, made-to-order pure attars and artisanal perfumes using time-honored distillation methods and traditional sandalwood-based formulations.">
+  <meta name="keywords" content="D R Aroma, Jaipur attar, Tripolia Bazar perfume, traditional sandalwood attar, bespoke perfume India, Ruh Gulab, Mitti attar, Indian artisanal perfumery">
+  <meta property="og:title" content="D R Aroma • Heritage Perfumes & Pure Attars | Jaipur Est. 1960">
+  <meta property="og:description" content="Handcrafted, made-to-order pure attars and artisanal fragrances from the historic lanes of Tripolia Bazar, Jaipur.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/css/variables.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/hero.css">
+  <link rel="stylesheet" href="/src/css/pages.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SITE HEADER
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="D R Aroma Homepage">
+        <div class="brand-crest" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L9.5 8.5 3 9.5 8 14 6.5 21 12 17.5 17.5 21 16 14 21 9.5 14.5 8.5z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">D R AROMA</span>
+          <div class="brand-subtext">Tripolia Bazar, Jaipur • Est. 1960</div>
+        </div>
+      </a>
+
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Fragrance Vault</a></li>
+          <li><a href="#home" onclick="document.querySelector('#bespoke-atelier-section')?.scrollIntoView({behavior: 'smooth'})" class="nav-link">Bespoke Atelier</a></li>
+          <li><a href="#story" class="nav-link">Our Heritage</a></li>
+          <li><a href="#visit" class="nav-link">Visit & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="cart-btn open-cart-btn" aria-label="Open your Royal Chest Cart">
+          <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT ROUTING VIEWS
+       ======================================================================== -->
+  <main id="main-content" role="main">
+
+    <!-- ======================================================================
+         VIEW 1: HOMEPAGE (#view-home)
+         ====================================================================== -->
+    <div id="view-home" class="page-view">
+
+      <!-- HERO SECTION WITH SCROLL-TRIGGERED FRAME-SEQUENCE ANIMATION -->
+      <section class="hero-scroll-container" aria-label="Heritage Fragrance Animation Hero">
+        <div class="hero-sticky-stage">
+          
+          <!-- Preloader Screen -->
+          <div class="hero-preloader" aria-live="polite">
+            <div class="preloader-crest">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L9.5 8.5 3 9.5 8 14 6.5 21 12 17.5 17.5 21 16 14 21 9.5 14.5 8.5z"/>
+              </svg>
+            </div>
+            <div class="preloader-title">D R Aroma • Jaipur</div>
+            <div class="preloader-bar-wrap">
+              <div class="preloader-bar-fill"></div>
+            </div>
+            <div class="preloader-status">Awakening Heritage Frames... 0%</div>
+          </div>
+
+          <!-- Canvas Scrubber (Desktop & Tablet) -->
+          <canvas class="hero-canvas" id="hero-scrub-canvas" aria-label="Animation showing the slow copper distillation and decanting of royal attar"></canvas>
+
+          <!-- Fallback Video/Poster Wrap (Mobile / Low-Power / Reduced Motion) -->
+          <div class="hero-fallback-wrap">
+            <video class="hero-fallback-video" autoplay loop muted playsinline poster="/images/ingredients-dark.jpg">
+              <source src="/video/hero-fallback.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Dark Luxury Vignette Overlay -->
+          <div class="hero-vignette" aria-hidden="true"></div>
+
+          <!-- Story Text Slides Synced to Scroll Scrubbing -->
+          <div class="hero-story-layer">
+            
+            <!-- Slide 1: 0% - 28% scroll -->
+            <div class="hero-slide active" data-slide="1">
+              <div class="hero-badge-pill">Tripolia Bazar, Jaipur • Est. 1960</div>
+              <h1 class="hero-headline">The Regal Alchemy of <em>Made-to-Order</em> Attar</h1>
+              <p class="hero-subheadline">
+                For generations, we have crafted pure botanical fragrances using time-honored distillation traditions passed down through decades. Crafted for individuals who cherish authentic scent over commercial bottles.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#shop" class="btn btn-gold">Explore Fragrance Vault</a>
+                <a href="#story" class="btn btn-outline-gold">Our 1960 Chronicle</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: 32% - 66% scroll -->
+            <div class="hero-slide" data-slide="2">
+              <div class="hero-badge-pill">Time-Honored Distillation</div>
+              <h2 class="hero-headline">Slow Distilled in <em>Traditional Sandalwood</em> Base</h2>
+              <p class="hero-subheadline">
+                100% alcohol-free, traditional sandalwood-based formulations. Each drop evolves dynamically with your skin's warmth over twenty-four hours.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#shop" class="btn btn-gold">View Royal Attars</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: 70% - 100% scroll -->
+            <div class="hero-slide" data-slide="3">
+              <div class="hero-badge-pill">Personalized Fragrance Atelier</div>
+              <h2 class="hero-headline">Your Custom Blend, <em>Hand-Compounded</em> to Order</h2>
+              <p class="hero-subheadline">
+                Tell our master perfumer your mood, season, and preferences. We compound your custom signature in hand-cut crystal flacons with an engraved monogram.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#home" onclick="document.querySelector('#bespoke-atelier-section')?.scrollIntoView({behavior: 'smooth'})" class="btn btn-gold">Build Bespoke Blend</a>
+                <a href="#visit" class="btn btn-outline-gold">Visit Tripolia Shop</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Scroll Indicator Cue -->
+          <div class="hero-scroll-indicator" aria-hidden="true">
+            <div class="scroll-indicator-mouse">
+              <div class="scroll-indicator-wheel"></div>
+            </div>
+            <span>Scroll to Distill</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- HERITAGE STRIP ("Since 1960, Tripolia Bazar, Jaipur") -->
+      <section class="heritage-strip bg-jaali-subtle" aria-label="Heritage Highlights">
+        <div class="container">
+          <div class="heritage-strip-grid">
+            
+            <div class="heritage-pillar-item">
+              <div class="heritage-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
+              </div>
+              <div class="heritage-pillar-content">
+                <h4>Since 1960 • Jaipur</h4>
+                <p>Rooted in historic Tripolia Bazar near City Palace.</p>
+              </div>
+            </div>
+
+            <div class="heritage-pillar-item">
+              <div class="heritage-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6z"/></svg>
+              </div>
+              <div class="heritage-pillar-content">
+                <h4>Time-Honored Distillation</h4>
+                <p>Artisanal methods passed down through generations.</p>
+              </div>
+            </div>
+
+            <div class="heritage-pillar-item">
+              <div class="heritage-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <div class="heritage-pillar-content">
+                <h4>Traditional Sandalwood Base</h4>
+                <p>100% alcohol-free, skin-nourishing botanical foundation.</p>
+              </div>
+            </div>
+
+            <div class="heritage-pillar-item">
+              <div class="heritage-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+              </div>
+              <div class="heritage-pillar-content">
+                <h4>Made-to-Order Craft</h4>
+                <p>Freshly decanted & compounded for each patron.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED CATEGORY TILES (Perfumes / Attars / Custom Blends) -->
+      <section class="section-padding bg-cream-warm" aria-labelledby="cat-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-pretitle">The Heritage Collection</span>
+            <h2 id="cat-heading" class="section-title">Artisanal Olfactory Realms</h2>
+            <p class="section-desc">
+              Discover the distinct pillars of D R Aroma. From sacred undiluted attars to modernized extrait sprays and bespoke formulations.
+            </p>
+          </div>
+
+          <div class="category-tiles-grid">
+            
+            <!-- Category Tile 1: Royal Attars -->
+            <a href="#shop" class="category-tile-card">
+              <img src="/images/rooh-gulab.jpg" alt="Pure Royal Indian Attars in hand-cut crystal flacons" class="category-tile-bg" loading="lazy">
+              <div class="category-tile-overlay"></div>
+              <div class="category-tile-content">
+                <span class="category-tile-tag">100% Pure Botanical Oil</span>
+                <h3 class="category-tile-title">Royal Attars</h3>
+                <p class="category-tile-desc">
+                  Slow-distilled Chaitra Damask Rose, aged Assam Oudh, and Thar petrichor in sacred sandalwood.
+                </p>
+                <span class="category-tile-link-text">Explore Attars →</span>
+              </div>
+            </a>
+
+            <!-- Category Tile 2: Artisanal Perfumes & Extrait -->
+            <a href="#shop" class="category-tile-card">
+              <img src="/images/tripolia-royal-oudh.jpg" alt="Artisanal Extrait de Parfum in French Flacons" class="category-tile-bg" loading="lazy">
+              <div class="category-tile-overlay"></div>
+              <div class="category-tile-content">
+                <span class="category-tile-tag">High-Concentration Extrait</span>
+                <h3 class="category-tile-title">Artisanal Perfumes</h3>
+                <p class="category-tile-desc">
+                  Traditional Jaipur compositions formulated into fine mist extrait de parfum with expansive sillage.
+                </p>
+                <span class="category-tile-link-text">Explore Sprays →</span>
+              </div>
+            </a>
+
+            <!-- Category Tile 3: Bespoke Blends -->
+            <a href="#home" onclick="document.querySelector('#bespoke-atelier-section')?.scrollIntoView({behavior: 'smooth'})" class="category-tile-card">
+              <img src="/images/bespoke-atelier.jpg" alt="Master Perfumer Blending Custom Attars" class="category-tile-bg" loading="lazy">
+              <div class="category-tile-overlay"></div>
+              <div class="category-tile-content">
+                <span class="category-tile-tag">Craft Personalization</span>
+                <h3 class="category-tile-title">Custom Blends</h3>
+                <p class="category-tile-desc">
+                  Tailored to your pulse warmth, skin chemistry, and personal aura with custom engraved monogram.
+                </p>
+                <span class="category-tile-link-text">Enter Atelier →</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- BESTSELLERS SHOWCASE SECTION -->
+      <section class="section-padding" aria-labelledby="bestsellers-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-pretitle">Time-Honored Classics</span>
+            <h2 id="bestsellers-heading" class="section-title">The Master Distillations</h2>
+            <p class="section-desc">
+              Four iconic formulations that have graced our Tripolia Bazar counter since 1960. Hand-decanted fresh upon order.
+            </p>
+          </div>
+
+          <div class="products-catalog-grid" style="grid-template-columns: repeat(4, 1fr);">
+            
+            <!-- Bestseller 1: Rooh Gulab -->
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="/images/rooh-gulab.jpg" alt="Rooh Gulab 1960 Pure Damask Rose Attar" class="product-image" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-gold">Bestseller</span>
+                  <span class="badge-amber">Pure Oil</span>
+                </div>
+                <div class="product-quick-actions">
+                  <a href="#product/rooh-gulab-1960" class="btn btn-gold btn-sm" style="flex: 1;">Customize & Order</a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-family">Noble Floral</div>
+                <h3 class="product-title"><a href="#product/rooh-gulab-1960">Rooh Gulab 1960</a></h3>
+                <div class="product-notes-summary">
+                  <span>Damask Rose • Sandalwood • Saffron</span>
+                </div>
+                <p class="product-desc">Morning-harvested wild roses gently distilled onto a traditional aged sandalwood base.</p>
+                <div class="product-footer">
+                  <div class="product-price"><small>From</small> ₹1,850</div>
+                  <button type="button" class="btn btn-outline-gold btn-sm" data-quick-add="rooh-gulab-1960">Quick Add</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bestseller 2: Tripolia Royal Oudh -->
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="/images/tripolia-royal-oudh.jpg" alt="Tripolia Royal Oudh Reserve Agarwood Attar" class="product-image" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-gold">Royal Reserve</span>
+                  <span class="badge-amber">Pure Oil</span>
+                </div>
+                <div class="product-quick-actions">
+                  <a href="#product/tripolia-royal-oudh" class="btn btn-gold btn-sm" style="flex: 1;">Customize & Order</a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-family">Noble Woody Oudh</div>
+                <h3 class="product-title"><a href="#product/tripolia-royal-oudh">Tripolia Royal Oudh</a></h3>
+                <div class="product-notes-summary">
+                  <span>Assam Agarwood • Ambergris • Taif Rose</span>
+                </div>
+                <p class="product-desc">Wild resinous heartwood from ancient Assam forests blended with royal ambergris.</p>
+                <div class="product-footer">
+                  <div class="product-price"><small>From</small> ₹2,450</div>
+                  <button type="button" class="btn btn-outline-gold btn-sm" data-quick-add="tripolia-royal-oudh">Quick Add</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bestseller 3: Mitti Attar -->
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="/images/mitti-attar.jpg" alt="Mitti Attar Petrichor of Thar Attar" class="product-image" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-gold">Heirloom Craft</span>
+                  <span class="badge-amber">Pure Oil</span>
+                </div>
+                <div class="product-quick-actions">
+                  <a href="#product/mitti-attar-petrichor" class="btn btn-gold btn-sm" style="flex: 1;">Customize & Order</a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-family">Earthy Petrichor</div>
+                <h3 class="product-title"><a href="#product/mitti-attar-petrichor">Mitti Attar (Petrichor)</a></h3>
+                <div class="product-notes-summary">
+                  <span>Baked Earth • Sandalwood • Vetiver</span>
+                </div>
+                <p class="product-desc">The sacred scent of the first monsoon rain striking parched summer Rajasthan clay.</p>
+                <div class="product-footer">
+                  <div class="product-price"><small>From</small> ₹1,550</div>
+                  <button type="button" class="btn btn-outline-gold btn-sm" data-quick-add="mitti-attar-petrichor">Quick Add</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bestseller 4: Kasturi Shamama -->
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <img src="/images/kasturi-shamama.jpg" alt="Kasturi Shamama Royal Heritage Attar" class="product-image" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-gold">Heritage Blend</span>
+                  <span class="badge-amber">Pure Oil</span>
+                </div>
+                <div class="product-quick-actions">
+                  <a href="#product/kasturi-shamama-royal" class="btn btn-gold btn-sm" style="flex: 1;">Customize & Order</a>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-family">Spicy Amber Resin</div>
+                <h3 class="product-title"><a href="#product/kasturi-shamama-royal">Kasturi Shamama Royal</a></h3>
+                <div class="product-notes-summary">
+                  <span>Saffron • Amber • Cinnamon • Frankincense</span>
+                </div>
+                <p class="product-desc">A complex blend of aromatic herbs, roots, and precious resins patiently matured over time.</p>
+                <div class="product-footer">
+                  <div class="product-price"><small>From</small> ₹2,150</div>
+                  <button type="button" class="btn btn-outline-gold btn-sm" data-quick-add="kasturi-shamama-royal">Quick Add</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- THE BESPOKE ATELIER (INTERACTIVE CUSTOM BLEND BUILDER) -->
+      <section id="bespoke-atelier-section" class="section-padding" style="background: var(--color-maroon-darkest);" aria-labelledby="atelier-heading">
+        <div class="container">
+          <div class="atelier-banner">
+            <div class="atelier-grid">
+              
+              <!-- Left Column: Interactive Selector -->
+              <div>
+                <span class="badge-gold" style="margin-bottom: 12px;">The Craft of Personalization</span>
+                <h2 id="atelier-heading" style="font-family: var(--font-serif-classic); font-size: clamp(2rem, 3.5vw, 3rem); color: var(--color-cream); margin-bottom: 16px;">
+                  The Bespoke Fragrance Atelier
+                </h2>
+                <p style="color: var(--color-cream-muted); font-size: 0.95rem; margin-bottom: 32px; line-height: 1.6;">
+                  D R Aroma is not a mass-market factory. In our Tripolia Bazar workshop, we formulate made-to-order compositions tailored to your unique skin temperature and pulse warmth. Select your preferences to compose your prescription.
+                </p>
+
+                <div class="atelier-steps-card">
+                  <!-- Step 1: Mood -->
+                  <div class="atelier-step-title">
+                    <span>1. Select Olfactory Mood & Occasion</span>
+                  </div>
+                  <div class="atelier-step-options">
+                    <div class="atelier-option-radio selected" data-atelier-option="mood" data-value="darbar">
+                      <span style="color: var(--color-gold); font-size: 1.1rem;">◈</span>
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.9rem;">Royal Darbar Nocturne</strong>
+                        <div style="font-size: 0.78rem; color: var(--color-cream-muted);">Regal Evening • Dark Oudh, Amber Resin & Taif Rose</div>
+                      </div>
+                    </div>
+                    <div class="atelier-option-radio" data-atelier-option="mood" data-value="rose">
+                      <span style="color: var(--color-gold); font-size: 1.1rem;">◈</span>
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.9rem;">Chaitra Damask Bloom</strong>
+                        <div style="font-size: 0.78rem; color: var(--color-cream-muted);">Morning Sun • Fresh Dewy Rose, Sweet Cardamom & Sandalwood</div>
+                      </div>
+                    </div>
+                    <div class="atelier-option-radio" data-atelier-option="mood" data-value="petrichor">
+                      <span style="color: var(--color-gold); font-size: 1.1rem;">◈</span>
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.9rem;">Thar Monsoon Petrichor</strong>
+                        <div style="font-size: 0.78rem; color: var(--color-cream-muted);">Grounding & Calm • Baked Earth, Clean Khus Vetiver</div>
+                      </div>
+                    </div>
+                    <div class="atelier-option-radio" data-atelier-option="mood" data-value="spice">
+                      <span style="color: var(--color-gold); font-size: 1.1rem;">◈</span>
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.9rem;">Desert Saffron & Shamama</strong>
+                        <div style="font-size: 0.78rem; color: var(--color-cream-muted);">Intense Warmth • Kashmiri Saffron, Star Anise & Rare Botanicals</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 2: Format & Base -->
+                  <div class="atelier-step-title">
+                    <span>2. Select Concentration & Vessel</span>
+                  </div>
+                  <div class="atelier-step-options" style="flex-direction: row; flex-wrap: wrap;">
+                    <div class="atelier-option-radio selected" data-atelier-option="intensity" data-value="attar" style="flex: 1;">
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.88rem;">Pure Attar (6ml Tola)</strong>
+                        <div style="font-size: 0.76rem; color: var(--color-cream-muted);">100% Oil • Intimate Bloom</div>
+                      </div>
+                    </div>
+                    <div class="atelier-option-radio" data-atelier-option="intensity" data-value="spray" style="flex: 1;">
+                      <div>
+                        <strong style="color: var(--color-cream); font-size: 0.88rem;">Extrait Spray (50ml)</strong>
+                        <div style="font-size: 0.76rem; color: var(--color-cream-muted);">30% Extrait • Expansive Sillage</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 3: Custom Monogram Seal -->
+                  <div class="atelier-step-title">
+                    <span>3. Custom Monogram (Engraved Brass Tag)</span>
+                  </div>
+                  <div style="display: flex; gap: 12px; align-items: center;">
+                    <input type="text" id="atelier-monogram-input" maxlength="3" placeholder="e.g. DRA" style="width: 110px; padding: 10px 14px; text-transform: uppercase; font-family: var(--font-serif-royal); font-size: 1.1rem; text-align: center; border: 1px solid var(--color-gold); border-radius: var(--radius-xs); background: rgba(0,0,0,0.5); color: var(--color-gold-bright);">
+                    <span style="font-size: 0.8rem; color: var(--color-cream-muted);">Up to 3 letters hand-engraved on the flacon seal tag.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Live Master Prescription Output -->
+              <div>
+                <div id="atelier-result-box" class="atelier-result-box">
+                  <!-- Dynamically populated by custom-atelier.js -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- "VISIT US AT TRIPOLIA BAZAR" TEASER -->
+      <section class="section-padding bg-cream-warm" aria-labelledby="visit-teaser-heading">
+        <div class="container">
+          <div class="visit-grid">
+            
+            <div>
+              <span class="section-pretitle">The Physical Sanctuary</span>
+              <h2 id="visit-teaser-heading" class="section-title">Step Into Tripolia Bazar</h2>
+              <p style="color: var(--color-charcoal-muted); font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">
+                While our digital atelier enables patrons across the world to reorder their signatures, nothing compares to smelling raw sandalwood shavings and copper cauldrons in person. We are nestled under the historic pink arches of Tripolia Bazar, just steps from the City Palace.
+              </p>
+              
+              <div style="background: #fff; border-radius: var(--radius-sm); padding: 20px; border: 1px solid rgba(197, 160, 89, 0.3); margin-bottom: 28px;">
+                <div style="font-family: var(--font-serif-royal); font-size: 0.85rem; color: var(--color-maroon); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px;">
+                  Historic Shop Address
+                </div>
+                <div style="font-size: 0.95rem; color: var(--color-charcoal); line-height: 1.5;">
+                  Shop No. 142, Historic Tripolia Bazar, Opp. Manak Chowk, Pink City, Jaipur, Rajasthan 302002
+                </div>
+                <div style="font-size: 0.85rem; color: var(--color-gold-deep); margin-top: 6px; font-weight: 600;">
+                  Open Monday – Saturday: 10:30 AM – 8:30 PM | Sunday: 11:00 AM – 6:00 PM
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="#visit" class="btn btn-gold">Directions & Booking</a>
+                <a href="https://wa.me/919829012345?text=Hello%20D%20R%20Aroma%2C%20I%20would%20like%20to%20reorder%20my%20heritage%20fragrance" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">WhatsApp Concierge</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="map-container-frame">
+                <!-- OpenStreetMap privacy-compliant embed centered on Tripolia Bazar, Jaipur -->
+                <iframe 
+                  title="D R Aroma Location in Tripolia Bazar Jaipur" 
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0" 
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=75.8200%2C26.9200%2C75.8350%2C26.9300&amp;layer=mapnik&amp;marker=26.9248%2C75.8242" 
+                  style="border: 0; filter: contrast(105%) brightness(98%);">
+                </iframe>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div><!-- End #view-home -->
+
+
+    <!-- ======================================================================
+         VIEW 2: SHOP / CATALOG PAGE (#view-shop)
+         ====================================================================== -->
+    <div id="view-shop" class="page-view" style="display: none;">
+      <div class="container">
+        
+        <!-- Shop Header -->
+        <div style="padding-top: 120px; padding-bottom: 24px; border-bottom: 1px solid var(--color-cream-dark);">
+          <span class="section-pretitle">Handcrafted Fragrance Vault</span>
+          <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); color: var(--color-maroon); margin-top: 8px;">
+            The Heritage Formulations
+          </h1>
+          <p style="color: var(--color-charcoal-muted); max-width: 680px; margin-top: 8px;">
+            Explore pure, small-batch attars and customizable perfumes. Filter by olfactory family, carrier base, or vessel format.
+          </p>
+        </div>
+
+        <div class="shop-layout">
+          
+          <!-- Shop Sidebar Filters -->
+          <aside class="shop-sidebar" role="region" aria-label="Catalog Filters">
+            
+            <!-- Format Filter -->
+            <div class="filter-group">
+              <h3 class="filter-title">Fragrance Format</h3>
+              <ul class="filter-options-list">
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="radio" name="shop-category" value="all" checked>
+                    <span>All Formats</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="radio" name="shop-category" value="attar">
+                    <span>Royal Attars (100% Oil)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="radio" name="shop-category" value="bespoke">
+                    <span>Custom Blends</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Family Filter -->
+            <div class="filter-group">
+              <h3 class="filter-title">Olfactory Family</h3>
+              <ul class="filter-options-list">
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="checkbox" name="shop-family" value="Floral">
+                    <span>Noble Floral (Damask Rose)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="checkbox" name="shop-family" value="Oudh & Woody">
+                    <span>Oudh & Rare Woods</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="checkbox" name="shop-family" value="Earthy">
+                    <span>Earthy Petrichor (Mitti)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="checkbox" name="shop-family" value="Amber & Spice">
+                    <span>Amber Resin & Spices</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="filter-checkbox-label">
+                    <input type="checkbox" name="shop-family" value="Custom">
+                    <span>Bespoke Formulations</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sandalwood Purity Callout -->
+            <div style="background: var(--color-maroon-dark); color: var(--color-cream); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--color-gold);">
+              <div style="font-family: var(--font-serif-royal); font-size: 0.78rem; color: var(--color-gold-bright); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px;">
+                Artisanal Craft Tradition
+              </div>
+              <p style="font-size: 0.78rem; line-height: 1.4; color: var(--color-cream-muted);">
+                Every attar is 100% alcohol-free, compounded onto traditional sandalwood-based foundations. Handcrafted with generational care.
+              </p>
+            </div>
+
+          </aside>
+
+          <!-- Shop Main Listing -->
+          <div class="shop-main-content">
+            
+            <div class="shop-top-bar">
+              <span id="shop-products-count" style="font-size: 0.9rem; font-weight: 600; color: var(--color-maroon-mid);">
+                Displaying authentic formulations
+              </span>
+
+              <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                <input type="search" id="shop-search" class="shop-search-input" placeholder="Search Rose, Oudh, Mitti..." aria-label="Search fragrances">
+                
+                <select id="shop-sort" class="shop-sort-select" aria-label="Sort products">
+                  <option value="featured">Featured Heritage</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Dynamic Products Grid -->
+            <div id="shop-products-grid" class="products-catalog-grid">
+              <!-- Dynamically populated by router.js -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End #view-shop -->
+
+
+    <!-- ======================================================================
+         VIEW 3: PRODUCT DETAIL PAGE (#view-pdp)
+         ====================================================================== -->
+    <div id="view-pdp" class="page-view" style="display: none;">
+      <div class="container" style="padding-top: 120px;">
+        
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" style="font-size: 0.84rem; color: var(--color-charcoal-muted); margin-bottom: 24px;">
+          <a href="#home">Home</a> / <a href="#shop">Fragrance Vault</a> / <span id="pdp-breadcrumb-name" style="color: var(--color-maroon); font-weight: 600;">Formulation</span>
+        </nav>
+
+        <div class="pdp-grid">
+          
+          <!-- Product Visual & Pyramid Column -->
+          <div>
+            <div class="pdp-gallery-wrap">
+              <img id="pdp-image" src="/images/rooh-gulab.jpg" alt="Artisanal Fragrance Bottle" class="pdp-main-image">
+            </div>
+
+            <!-- 3-Tier Olfactory Pyramid -->
+            <div style="margin-top: 36px;">
+              <h3 style="font-family: var(--font-serif-royal); font-size: 1rem; color: var(--color-maroon); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px;">
+                Olfactory Note Architecture
+              </h3>
+              <div id="pdp-pyramid-container">
+                <!-- Dynamically populated by router.js -->
+              </div>
+            </div>
+
+            <!-- Distillation Details Box -->
+            <div style="background: var(--color-cream-warm); border-radius: var(--radius-sm); border: 1px solid var(--color-cream-dark); padding: 20px; margin-top: 24px;">
+              <h4 style="font-family: var(--font-serif-royal); font-size: 0.85rem; color: var(--color-maroon-mid); text-transform: uppercase; margin-bottom: 12px;">
+                Botanical Provenance
+              </h4>
+              <div style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 8px; color: var(--color-charcoal);">
+                <div><strong>Harvest Season:</strong> <span id="pdp-harvest">Chaitra</span></div>
+                <div><strong>Distillation:</strong> <span id="pdp-distillation">Time-honored slow distillation</span></div>
+                <div><strong>Origin:</strong> <span id="pdp-origin">Kannauj & Jaipur</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Customizer & Order Column -->
+          <div>
+            <span class="badge-gold" style="margin-bottom: 8px;">Made to Order</span>
+            <h1 id="pdp-title" style="font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--color-maroon); line-height: 1.15; margin-bottom: 8px;">
+              Rooh Gulab 1960
+            </h1>
+            <p id="pdp-subtitle" style="font-size: 1rem; color: var(--color-gold-deep); font-weight: 500; margin-bottom: 20px;">
+              Hydro-distilled Chaitra Damask Rose on Traditional Sandalwood Base
+            </p>
+
+            <p id="pdp-story" style="font-size: 0.95rem; color: var(--color-charcoal-muted); line-height: 1.65; margin-bottom: 28px;">
+              Conceived in 1960 by our founding perfumer in Tripolia Bazar.
+            </p>
+
+            <!-- Customizer Form -->
+            <div class="pdp-customizer-box">
+              
+              <!-- 1. Vessel & Size -->
+              <div>
+                <label class="custom-option-label">1. Choose Vessel & Volume</label>
+                <div id="pdp-size-selector" class="custom-pill-selector">
+                  <!-- Dynamically populated -->
+                </div>
+              </div>
+
+              <!-- 2. Carrier Oil Base -->
+              <div>
+                <label class="custom-option-label">2. Choose Carrier Foundation</label>
+                <div id="pdp-carrier-selector" class="custom-pill-selector">
+                  <!-- Dynamically populated -->
+                </div>
+              </div>
+
+              <!-- 3. Monogram Engraving -->
+              <div>
+                <label class="custom-option-label" for="pdp-monogram-input">
+                  3. Complimentary Flacon Monogram (Brass Seal Tag)
+                </label>
+                <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 24px;">
+                  <input type="text" id="pdp-monogram-input" maxlength="3" placeholder="e.g. AB" style="width: 100px; padding: 10px 14px; text-transform: uppercase; font-family: var(--font-serif-royal); font-size: 1rem; text-align: center; border: 1px solid var(--color-cream-dark); border-radius: var(--radius-xs); background: #fff;">
+                  <span style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Up to 3 initials hand-engraved on the antique brass neck tag.</span>
+                </div>
+              </div>
+
+              <!-- Pricing & Add to Cart -->
+              <div style="border-top: 1px solid var(--color-cream-dark); padding-top: 20px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                <div>
+                  <span style="font-size: 0.76rem; text-transform: uppercase; color: var(--color-charcoal-muted); display: block;">Total Crafted Value</span>
+                  <span id="pdp-price-val" style="font-family: var(--font-serif-classic); font-size: 1.8rem; font-weight: 700; color: var(--color-maroon-mid);">
+                    ₹1,850
+                  </span>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <label for="pdp-quantity-input" class="sr-only">Quantity</label>
+                  <input type="number" id="pdp-quantity-input" min="1" max="10" value="1" style="width: 60px; padding: 10px; border: 1px solid var(--color-cream-dark); border-radius: var(--radius-xs); text-align: center; font-weight: 600;">
+                  <button type="button" id="pdp-add-cart-btn" class="btn btn-gold">
+                    Add to Royal Chest
+                  </button>
+                </div>
+              </div>
+
+              <!-- Presentation Box Notice -->
+              <div style="font-size: 0.78rem; color: var(--color-charcoal-muted); display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--color-gold); font-size: 1rem;">✦</span>
+                Presented in a royal maroon velvet keepsake box with hand-stamped gold wax seal.
+              </div>
+
+            </div>
+
+            <!-- How to apply guide -->
+            <div style="margin-top: 32px; border-top: 1px solid var(--color-cream-dark); padding-top: 24px;">
+              <h4 style="font-family: var(--font-serif-royal); font-size: 0.85rem; color: var(--color-maroon); text-transform: uppercase; margin-bottom: 8px;">
+                The Sacred Art of Applying Pure Attar
+              </h4>
+              <p style="font-size: 0.86rem; color: var(--color-charcoal-muted); line-height: 1.5;">
+                Touch a single drop to your pulse points — inner wrists, behind earlobes, and the clavicle. Do not rub vigorously; let your body warmth slowly awaken the layered botanicals over the course of the day.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End #view-pdp -->
+
+
+    <!-- ======================================================================
+         VIEW 4: CHECKOUT FLOW & PAYMENT SIMULATION (#view-checkout)
+         ====================================================================== -->
+    <div id="view-checkout" class="page-view" style="display: none;">
+      <div class="container" style="padding-top: 120px;">
+        
+        <div style="margin-bottom: 32px;">
+          <span class="section-pretitle">Seamless Insured Dispatch</span>
+          <h1 style="font-size: 2.6rem; color: var(--color-maroon);">Complete Your Heritage Order</h1>
+          <p style="color: var(--color-charcoal-muted);">We collect only the essential personal details required to courier your bespoke fragrance.</p>
+        </div>
+
+        <div class="checkout-grid">
+          
+          <!-- Left: Minimal Privacy-Compliant Checkout Form -->
+          <div>
+            <form id="checkout-form" class="checkout-form-card" novalidate>
+              
+              <h2 style="font-family: var(--font-serif-royal); font-size: 1.05rem; color: var(--color-maroon); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;">
+                1. Delivery Details
+              </h2>
+
+              <div class="form-group">
+                <label for="checkout-name" class="form-label">Full Name *</label>
+                <input type="text" id="checkout-name" class="form-control" placeholder="e.g. Maharaja Vikram Singh" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="checkout-email" class="form-label">Email Address *</label>
+                  <input type="email" id="checkout-email" class="form-control" placeholder="patron@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-phone" class="form-label">Mobile Number (for Courier SMS) *</label>
+                  <input type="tel" id="checkout-phone" class="form-control" placeholder="+91 98290 12345" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-address" class="form-label">Complete Street Address *</label>
+                <input type="text" id="checkout-address" class="form-control" placeholder="House/Flat No, Landmark, Street" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="checkout-city" class="form-label">City *</label>
+                  <input type="text" id="checkout-city" class="form-control" value="Jaipur" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-state" class="form-label">State *</label>
+                  <input type="text" id="checkout-state" class="form-control" value="Rajasthan" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-pin" class="form-label">Postal PIN Code *</label>
+                <input type="text" id="checkout-pin" class="form-control" value="302002" required>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-notes" class="form-label">Special Formulation Notes for the Master Perfumer (Optional)</label>
+                <textarea id="checkout-notes" class="form-control" rows="3" placeholder="e.g. Slightly higher sandalwood proportion, or special birthday gift packaging request."></textarea>
+              </div>
+
+              <h2 style="font-family: var(--font-serif-royal); font-size: 1.05rem; color: var(--color-maroon); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 36px; margin-bottom: 20px;">
+                2. Payment Method
+              </h2>
+
+              <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                
+                <label class="atelier-option-radio selected" style="color: var(--color-charcoal); background: var(--color-cream-warm);">
+                  <input type="radio" name="payment-method" value="upi" checked style="accent-color: var(--color-maroon);">
+                  <div>
+                    <strong>Instant UPI (GPay, PhonePe, Paytm, BHIM)</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Instant zero-fee authorization with QR scan simulation</div>
+                  </div>
+                </label>
+
+                <label class="atelier-option-radio" style="color: var(--color-charcoal); background: var(--color-cream-warm);">
+                  <input type="radio" name="payment-method" value="card" style="accent-color: var(--color-maroon);">
+                  <div>
+                    <strong>Credit / Debit Card</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Visa, MasterCard, RuPay & Amex (Encrypted test sandbox)</div>
+                  </div>
+                </label>
+
+                <label class="atelier-option-radio" style="color: var(--color-charcoal); background: var(--color-cream-warm);">
+                  <input type="radio" name="payment-method" value="tripolia" style="accent-color: var(--color-maroon);">
+                  <div>
+                    <strong>Pay & Collect In-Person at Tripolia Bazar Shop</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-charcoal-muted);">Collect your freshly compounded order directly at our Jaipur counter</div>
+                  </div>
+                </label>
+
+              </div>
+
+              <!-- Payment Fields Container -->
+              <div id="payment-fields-upi" class="payment-fields-group" style="background: var(--color-cream); border: 1px solid var(--color-gold); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 24px;">
+                <div style="font-size: 0.88rem; color: var(--color-charcoal); margin-bottom: 8px;">
+                  <strong>Simulated UPI Authorization:</strong> Click "Authorize & Place Order" below to trigger the verified payment flow.
+                </div>
+                <div style="display: flex; gap: 8px; font-size: 0.76rem; color: #2E7D32; font-weight: 600;">
+                  <span>✓ 256-Bit SSL Encryption</span>
+                  <span>✓ RBI Compliant Sandbox</span>
+                </div>
+              </div>
+
+              <div id="payment-fields-card" class="payment-fields-group" style="display: none; background: var(--color-cream); border: 1px solid var(--color-gold); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 24px;">
+                <div class="form-group">
+                  <label class="form-label">Card Number (Sandbox Test)</label>
+                  <input type="text" class="form-control" value="4532 •••• •••• 8921" readonly>
+                </div>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label class="form-label">Expiry</label>
+                    <input type="text" class="form-control" value="12/28" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">CVV</label>
+                    <input type="password" class="form-control" value="888" readonly>
+                  </div>
+                </div>
+              </div>
+
+              <div id="payment-fields-tripolia" class="payment-fields-group" style="display: none; background: var(--color-cream); border: 1px solid var(--color-gold); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 24px;">
+                <div style="font-size: 0.88rem; color: var(--color-charcoal);">
+                  Your formulation will be compounded and held under your name at <strong>Shop No. 142, Tripolia Bazar</strong> for up to 7 days.
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">
+                Authorize & Place Heritage Order
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Right: Order Summary -->
+          <div>
+            <div class="checkout-form-card">
+              <h2 style="font-family: var(--font-serif-royal); font-size: 1.05rem; color: var(--color-maroon); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;">
+                Order Summary
+              </h2>
+
+              <div class="checkout-summary-items">
+                <!-- Dynamically populated by checkout.js -->
+              </div>
+
+              <div style="border-top: 1px solid var(--color-cream-dark); padding-top: 16px; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: var(--color-charcoal-muted);">Formulations Subtotal:</span>
+                  <span class="checkout-subtotal" style="font-weight: 600;">₹0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: var(--color-charcoal-muted);">Royal Insured Courier:</span>
+                  <span class="checkout-shipping" style="color: #2E7D32; font-weight: 600;">Complimentary</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: var(--color-charcoal-muted);">Hand-Stamped Wax Seal:</span>
+                  <span style="color: var(--color-gold-deep); font-weight: 600;">Complimentary</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-top: 1px solid var(--color-cream-dark); padding-top: 12px; font-family: var(--font-serif-classic); font-size: 1.35rem; font-weight: 700; color: var(--color-maroon-dark);">
+                  <span>Total Payable:</span>
+                  <span class="checkout-total">₹0</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 24px; padding: 14px; background: var(--color-cream-warm); border-radius: var(--radius-xs); font-size: 0.76rem; color: var(--color-charcoal-muted); line-height: 1.45;">
+                <strong>Pitch Demo Assurance:</strong> No real funds will be deducted. You will immediately receive a printable Jaipur Royal Invoice Receipt confirming the formulation.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End #view-checkout -->
+
+
+    <!-- ======================================================================
+         VIEW 5: "OUR STORY" HERITAGE CHRONICLE (#view-story)
+         ====================================================================== -->
+    <div id="view-story" class="page-view" style="display: none;">
+      <div class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        
+        <div class="policy-doc-wrap">
+          <div style="text-align: center; border-bottom: 2px solid var(--color-gold); padding-bottom: 24px; margin-bottom: 36px;">
+            <span class="section-pretitle">The 1960 Chronicle</span>
+            <h1 style="font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--color-maroon); margin-top: 10px;">
+              The Soul of Tripolia Bazar
+            </h1>
+            <p style="font-size: 1.1rem; color: var(--color-gold-deep); margin-top: 8px;">
+              Over Six Decades of Pure Hydro-Distillation & Bespoke Jaipur Perfumery
+            </p>
+          </div>
+
+          <div style="margin-bottom: 36px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-gold);">
+            <img src="/images/ingredients-flatlay.jpg" alt="Pure raw natural fragrance ingredients flatlay on dark fabric" style="width: 100%; height: 360px; object-fit: cover;">
+          </div>
+
+          <h2>The Inception in 1960</h2>
+          <p>
+            In 1960, amidst the vibrant brassware artisans and historic havelis of Tripolia Bazar, D R Aroma opened its wooden carved doors. While commercial industrialization swept the globe with synthetic aroma chemicals and mass-bottled sprays, our founding master perfumer made an enduring pledge: <em>never compromise on the living soul of pure botanicals.</em>
+          </p>
+
+          <h2>The Time-Honored Art of Slow Distillation</h2>
+          <p>
+            Attar making is not industrial chemistry; it is a patient, meditative craft passed down across generations. Our workshop embraces the enduring wisdom of traditional Indian perfumery:
+          </p>
+          <ul>
+            <li><strong>The Artisanal Stills:</strong> Handcrafted vessels filled with pure water and seasonal botanicals — whether springtime Damask roses, fragrant jasmine, or sun-baked earthen clay.</li>
+            <li><strong>Gentle Steam Distillation:</strong> The vessels are sealed securely according to ancient techniques. Gentle, slow heat releases the delicate aromatic vapors without burning or altering the fragile natural fragrance molecules.</li>
+            <li><strong>Traditional Sandalwood Foundation:</strong> The aromatic essence condenses and gently infuses into an aged, traditional sandalwood oil base. Over multiple careful distillations, the base absorbs the full soul of the botanicals, yielding a rich, alcohol-free attar that endures on the skin.</li>
+          </ul>
+
+          <div style="background: var(--color-cream-warm); border-left: 4px solid var(--color-gold); padding: 20px; margin: 32px 0;">
+            <p style="font-family: var(--font-serif-classic); font-size: 1.25rem; font-style: italic; color: var(--color-maroon-mid); margin-bottom: 6px;">
+              "A true attar does not shout from across the room. It lives on your pulse, awakening when you greet an old friend, whispering when the desert wind rises."
+            </p>
+            <span style="font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-charcoal-muted);">— Master Perfumer, D R Aroma (1960)</span>
+          </div>
+
+          <h2>Why We Remain Made-to-Order</h2>
+          <p>
+            Many have urged us to mass-package fixed bottles and sell through department store chains. We have consistently declined. Every human body carries a unique lipid mantle and skin warmth. By compounding our fragrances to order, we ensure that the perfume you wear belongs entirely to you.
+          </p>
+
+          <div style="text-align: center; margin-top: 48px;">
+            <a href="#shop" class="btn btn-gold">Explore Our Distillations</a>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- End #view-story -->
+
+
+    <!-- ======================================================================
+         VIEW 6: VISIT & CONTACT PAGE (#view-visit)
+         ====================================================================== -->
+    <div id="view-visit" class="page-view" style="display: none;">
+      <div class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
+          <span class="section-pretitle">The Tripolia Sanctuary</span>
+          <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); color: var(--color-maroon); margin-top: 8px;">
+            Visit Our Heritage Counter
+          </h1>
+          <p style="color: var(--color-charcoal-muted); font-size: 1.05rem; margin-top: 8px;">
+            Located in the heart of Jaipur's walled Pink City. Experience private olfactory consultations and discover vintage attars decanted before your eyes.
+          </p>
+        </div>
+
+        <div class="visit-grid" style="margin-bottom: 64px;">
+          
+          <!-- Contact Details & Private Appointment Booking -->
+          <div>
+            <div class="checkout-form-card" style="margin-bottom: 24px;">
+              <h2 style="font-family: var(--font-serif-royal); font-size: 1.05rem; color: var(--color-maroon); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">
+                Reserve a Private Blending Appointment
+              </h2>
+              <p style="font-size: 0.86rem; color: var(--color-charcoal-muted); margin-bottom: 20px;">
+                Meet one-on-one with our master perfumer in our Tripolia shop for a bespoke 45-minute skin profiling session.
+              </p>
+
+              <form id="atelier-booking-form">
+                <div class="form-group">
+                  <label for="booking-name" class="form-label">Your Name *</label>
+                  <input type="text" id="booking-name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="booking-date" class="form-label">Preferred Date *</label>
+                    <input type="date" id="booking-date" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="booking-time" class="form-label">Preferred Slot *</label>
+                    <select id="booking-time" class="form-control" required>
+                      <option value="11:30 AM">11:30 AM (Morning Still)</option>
+                      <option value="02:30 PM">02:30 PM (Afternoon)</option>
+                      <option value="05:30 PM">05:30 PM (Sunset Bloom)</option>
+                      <option value="07:00 PM">07:00 PM (Evening Nocturne)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-phone" class="form-label">WhatsApp Contact *</label>
+                  <input type="tel" id="booking-phone" class="form-control" placeholder="+91 98290 12345" required>
+                </div>
+
+                <button type="submit" class="btn btn-gold" style="width: 100%;">
+                  Reserve Atelier Consultation
+                </button>
+              </form>
+            </div>
+
+            <!-- General Inquiries Form -->
+            <div class="checkout-form-card">
+              <h3 style="font-family: var(--font-serif-royal); font-size: 0.95rem; color: var(--color-maroon); text-transform: uppercase; margin-bottom: 12px;">
+                Direct Message to Concierge
+              </h3>
+              <form id="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Email / Phone" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="2" placeholder="How can we assist your fragrance journey?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-gold btn-sm" style="width: 100%;">
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Location Information & Interactive Map -->
+          <div>
+            <div class="map-container-frame" style="height: 440px;">
+              <iframe 
+                title="D R Aroma Map Tripolia Bazar" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=75.8200%2C26.9200%2C75.8350%2C26.9300&amp;layer=mapnik&amp;marker=26.9248%2C75.8242" 
+                style="border: 0;">
+              </iframe>
+            </div>
+
+            <div style="background: #fff; padding: 24px; border-radius: var(--radius-sm); border: 1px solid var(--color-gold); margin-top: 24px;">
+              <h3 style="font-family: var(--font-serif-royal); font-size: 1rem; color: var(--color-maroon); margin-bottom: 8px;">
+                Finding Our Counter
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--color-charcoal); line-height: 1.5; margin-bottom: 12px;">
+                Enter Tripolia Bazar through the majestic Tripolia Gate from Chaura Rasta or walk 400 meters south from Hawa Mahal. We are situated at <strong>Shop No. 142</strong>, directly opposite the historic brassware craftsmen.
+              </p>
+              <div style="font-size: 0.84rem; color: var(--color-gold-deep);">
+                <strong>WhatsApp Concierge:</strong> +91 98290 12345 | <strong>Email:</strong> concierge@draroma.in
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End #view-visit -->
+
+
+    <!-- ======================================================================
+         VIEW 7: LEGAL & POLICY DOCUMENTS (#view-policy)
+         ====================================================================== -->
+    <div id="view-policy" class="page-view" style="display: none;">
+      <div class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        
+        <div class="policy-doc-wrap">
+          <h1 id="policy-doc-title" style="font-size: 2.2rem; color: var(--color-maroon); border-bottom: 2px solid var(--color-gold); padding-bottom: 16px; margin-bottom: 24px;">
+            Policy Document
+          </h1>
+          <div id="policy-doc-content">
+            <!-- Dynamically populated by router.js -->
+          </div>
+        </div>
+
+      </div>
+    </div><!-- End #view-policy -->
+
+  </main>
+
+
+  <!-- ========================================================================
+       SLIDE-OUT CART DRAWER
+       ======================================================================== -->
+  <div class="cart-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" role="dialog" aria-label="Royal Chest Cart Drawer">
+    <div class="cart-header">
+      <div class="cart-header-title">Your Royal Chest</div>
+      <button type="button" class="cart-close-btn" aria-label="Close cart drawer">×</button>
+    </div>
+
+    <!-- Free Insured Courier Progress Indicator -->
+    <div class="cart-free-shipping-bar">
+      <div class="cart-shipping-status-text">
+        Add items for complimentary insured courier across India.
+      </div>
+      <div class="cart-shipping-progress" aria-hidden="true">
+        <div class="cart-shipping-progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items Container -->
+    <div class="cart-items-list">
+      <!-- Populated by cart.js -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Insured Value:</span>
+        <span class="cart-subtotal-val">₹0</span>
+      </div>
+      <button type="button" class="btn btn-gold cart-checkout-btn" style="width: 100%;">
+        Proceed to Secure Checkout →
+      </button>
+      <div style="font-size: 0.72rem; color: var(--color-charcoal-muted); text-align: center; margin-top: 10px;">
+        Hand-decanted fresh upon order • Traditional Sandalwood base
+      </div>
+    </div>
+  </aside>
+
+
+  <!-- ========================================================================
+       ORDER CONFIRMATION RECEIPT MODAL
+       ======================================================================== -->
+  <div class="order-modal-backdrop" role="dialog" aria-modal="true" aria-label="Heritage Order Confirmation Receipt">
+    <div class="order-modal-card">
+      <div class="order-receipt-details">
+        <!-- Populated by checkout.js -->
+      </div>
+      <div style="display: flex; gap: 12px; justify-content: center; margin-top: 24px;">
+        <button type="button" class="btn btn-gold print-receipt-btn">
+          Print / Download Royal Receipt
+        </button>
+        <button type="button" class="btn btn-outline-gold close-receipt-btn">
+          Return to Atelier
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       COOKIE CONSENT BANNER (WCAG AA COMPLIANT)
+       ======================================================================== -->
+  <div id="cookie-consent-banner" class="cookie-banner" role="region" aria-label="Privacy & Cookie Preferences">
+    <div class="cookie-content">
+      <h4>Respect for Your Privacy & Heritage</h4>
+      <p>
+        D R Aroma respects your digital sanctity just as we honor the purity of our distillations. We use strictly minimal functional storage for your cart. No third-party tracking cookies fire without your explicit affirmative consent.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" id="cookie-accept-all" class="btn btn-gold btn-sm">
+        Accept Necessary & Preferences
+      </button>
+      <button type="button" id="cookie-reject-non-essential" class="btn btn-outline-gold btn-sm">
+        Essential Only
+      </button>
+      <a href="#cookies" class="btn-sm" style="color: var(--color-gold-bright); text-decoration: underline;">
+        Read Policy
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer bg-jaali-subtle" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Col 1: Heritage Bio -->
+        <div>
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-crest" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9.5 8.5 3 9.5 8 14 6.5 21 12 17.5 17.5 21 16 14 21 9.5 14.5 8.5z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="brand-name">D R AROMA</span>
+              <div class="brand-subtext">Tripolia Bazar, Jaipur • Est. 1960</div>
+            </div>
+          </div>
+          <p style="font-size: 0.86rem; color: var(--color-cream-muted); line-height: 1.6; margin-bottom: 20px;">
+            Preserving the traditional Indian art of slow distillation and personalized perfumery. Made-to-order botanical attars crafted on traditional sandalwood foundations in the Pink City of Rajasthan.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--color-gold);">
+            Shop No. 142, Historic Tripolia Bazar, Jaipur, RJ 302002
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <div class="footer-col-title">Collections</div>
+          <ul class="footer-links">
+            <li><a href="#shop" class="footer-link">Royal Attars (100% Oil)</a></li>
+            <li><a href="#shop" class="footer-link">Artisanal Extrait Sprays</a></li>
+            <li><a href="#home" onclick="document.querySelector('#bespoke-atelier-section')?.scrollIntoView({behavior: 'smooth'})" class="footer-link">Bespoke Atelier</a></li>
+            <li><a href="#product/rooh-gulab-1960" class="footer-link">Rooh Gulab 1960</a></li>
+            <li><a href="#product/tripolia-royal-oudh" class="footer-link">Tripolia Royal Oudh</a></li>
+            <li><a href="#product/mitti-attar-petrichor" class="footer-link">Mitti Attar (Petrichor)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Heritage & Sanctuary -->
+        <div>
+          <div class="footer-col-title">The Sanctuary</div>
+          <ul class="footer-links">
+            <li><a href="#story" class="footer-link">Our 1960 Heritage</a></li>
+            <li><a href="#story" class="footer-link">Artisanal Distillation</a></li>
+            <li><a href="#visit" class="footer-link">Visit Tripolia Shop</a></li>
+            <li><a href="#visit" class="footer-link">Book Atelier Session</a></li>
+            <li><a href="https://wa.me/919829012345" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Seasonal Harvest Ledger & Legal -->
+        <div>
+          <div class="footer-col-title">Seasonal Distillations</div>
+          <p style="font-size: 0.82rem; color: var(--color-cream-muted); line-height: 1.5; margin-bottom: 14px;">
+            Subscribe to receive private notification when the annual Chaitra Damask Rose harvest or monsoon Mitti batches are freshly decanted.
+          </p>
+          <form id="newsletter-form" style="display: flex; gap: 8px;">
+            <input type="email" placeholder="Your Email Address" required style="padding: 10px 14px; border-radius: var(--radius-xs); border: 1px solid var(--color-gold); background: rgba(0,0,0,0.5); color: #fff; font-size: 0.84rem; flex: 1;">
+            <button type="submit" class="btn btn-gold btn-sm">Join</button>
+          </form>
+
+          <div style="margin-top: 20px; font-size: 0.78rem; color: var(--color-cream-muted);">
+            <div><strong>Hours:</strong> Mon – Sat: 10:30 AM – 8:30 PM</div>
+            <div>Sunday: 11:00 AM – 6:00 PM</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal Strip -->
+      <div class="footer-bottom">
+        <div>
+          © 1960 – 2026 D R Aroma. All Rights Reserved. Handcrafted in Tripolia Bazar, Jaipur, Rajasthan.
+        </div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <a href="#privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" class="footer-link">Terms & Conditions</a>
+          <a href="#refund" class="footer-link">Refund Policy</a>
+          <a href="#cookies" class="footer-link">Cookie Policy</a>
+          <a href="#" class="footer-link open-cookie-settings">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       REUSABLE HERITAGE NOTICE MODAL
+       ======================================================================== -->
+  <div id="notice-modal-backdrop" class="order-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="notice-modal-title" style="display: none;"></div>
+
+  <!-- Application Bootstrap -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
